@@ -6,7 +6,7 @@ function tick (){
     count = count + 1 ;
     console.log("tick " + count);
     
-    if (count === 5){
+    if (count === 10){
     clearInterval(timer);
     console.log("The counter rests.");
     }
