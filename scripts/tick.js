@@ -8,6 +8,7 @@ function tick (){
     
     if (count === 5){
     clearInterval(timer);
+    console.log("The counter rests.");
     }
 }
 
