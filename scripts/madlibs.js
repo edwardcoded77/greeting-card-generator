@@ -1,5 +1,4 @@
-// Random function
-
+// Random number helper
 function randomNumber(a, b) {
 return Math.floor(Math.random() * (b - a + 1)) + a; 
 }
@@ -22,6 +21,15 @@ let closings = [
   "Coding requires constant practice."
 ];
 
+// Pick choice
+
+let choice = [
+  "Become a doctor",
+  "Become a warrior",
+  "Become a wise leader"
+];
+
+
 // Output 
 function makeCard() {
     // tolowerCase section
@@ -35,14 +43,19 @@ if (style.toLowerCase() === "fancy"){
    console.log("You are as " + adjective + " as a " + noun + ".");
    console.log("Happy birthday from the pluto.");
 
-// closing array
+   let picker = randomNumber(0, 2);
+   console.log("Your choice is : " + choice[picker])
+
+    // closing array
   /* let index = randomNumber(0, 5); */
   let index = randomNumber(0, closings.length - 1)
-    console.log(closings[index]); 
+    console.log("Your selected closing: " + closings[index]); 
+
+  let number = randomNumber(0, 100);
+  console.log("Your number is: " + number)
   }
-
+   
 makeCard();
-
 
 
 
