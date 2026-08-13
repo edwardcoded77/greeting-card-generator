@@ -1,3 +1,5 @@
+
+
 // User Input
 let name = prompt("A name:");
 let adjective = prompt("An adjective:");
@@ -15,10 +17,54 @@ makeCard();
 
 
 
-// function makeGreeting
+ function makeGreeting
 
 function makeGreeting(){
     console.log("Hello everyone, my name is " + name );
 }
 
-makeGreeting()
+ 
+
+
+
+
+
+let closings = [
+  "You are a legend.",
+  "Stay golden.",
+  "Signs point to awesome.",
+];
+
+function randomNumber(a, b) {
+  return Math.floor(Math.random() * (b - a + 1)) + a;
+}
+
+function makeCard() {
+  console.log("Dear " + name + ",");
+  console.log("You are as " + adjective + " as a " + noun + ".");
+  let index = randomNumber(0,2);
+  console.log(closings[index]);
+}
+
+
+
+
+
+
+let style = prompt("Fancy or Silly ?");
+let name = prompt("A name:");
+
+function makeCard(){
+  if (style.toLowerCase() === "fancy"){
+   console.log("Dearest " + name + ",");
+   } 
+   else {
+      console.log("YO " + name + "!");
+   }
+
+
+  // rest of the card unchanged 
+   console.log("You are awseome!.");
+}
+
+makeCard();
