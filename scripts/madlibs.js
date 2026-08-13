@@ -35,14 +35,11 @@ if (style.toLowerCase() === "fancy"){
    console.log("You are as " + adjective + " as a " + noun + ".");
    console.log("Happy birthday from the pluto.");
 
-
-   // closing array
+// closing array
   /* let index = randomNumber(0, 5); */
   let index = randomNumber(0, closings.length - 1)
     console.log(closings[index]); 
-  
-
-}
+  }
 
 makeCard();
 
