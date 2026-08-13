@@ -44,8 +44,6 @@ if (style.toLowerCase() === "fancy"){
 
 }
 
-
-
 makeCard();
 
 
