@@ -1,27 +1,50 @@
+// Random function
 
+function randomNumber(a, b) {
+return Math.floor(Math.random() * (b - a + 1)) + a; 
+}
 
 // User Input
 let name = prompt("A name:");
 let adjective = prompt("An adjective:");
 let noun = prompt("A noun:");
+let style = prompt("Fancy or Silly ?");
 
+
+// closing array
+
+let closings = [
+  "You are a legend.",
+  "Stay golden.",
+  "Signs point to awesome.",
+  "I deserve a mountain of good food.",
+  "Keep reaching for the new height.",
+  "Coding requires constant practice."
+];
 
 // Output 
 function makeCard() {
-  console.log("Dear " + name + ",");
-  console.log("You are as " + adjective + " as a " + noun + ".");
-  console.log("Happy birthday from the generator.");
-}
+    // tolowerCase section
+if (style.toLowerCase() === "fancy"){
+   console.log("Dearest " + name + ".");
+   } 
+   else {
+      console.log("YO " + name + "!");
+   }
+   
+   console.log("You are as " + adjective + " as a " + noun + ".");
+   console.log("Happy birthday from the pluto.");
+
+// closing array
+  /* let index = randomNumber(0, 5); */
+  let index = randomNumber(0, closings.length - 1)
+    console.log(closings[index]); 
+  }
 
 makeCard();
 
 
 
- function makeGreeting
-
-function makeGreeting(){
-    console.log("Hello everyone, my name is " + name );
-}
 
  
 
@@ -29,42 +52,9 @@ function makeGreeting(){
 
 
 
-let closings = [
-  "You are a legend.",
-  "Stay golden.",
-  "Signs point to awesome.",
-];
-
-function randomNumber(a, b) {
-  return Math.floor(Math.random() * (b - a + 1)) + a;
-}
-
-function makeCard() {
-  console.log("Dear " + name + ",");
-  console.log("You are as " + adjective + " as a " + noun + ".");
-  let index = randomNumber(0,2);
-  console.log(closings[index]);
-}
 
 
 
 
 
 
-let style = prompt("Fancy or Silly ?");
-let name = prompt("A name:");
-
-function makeCard(){
-  if (style.toLowerCase() === "fancy"){
-   console.log("Dearest " + name + ",");
-   } 
-   else {
-      console.log("YO " + name + "!");
-   }
-
-
-  // rest of the card unchanged 
-   console.log("You are awseome!.");
-}
-
-makeCard();
