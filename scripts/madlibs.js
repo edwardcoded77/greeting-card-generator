@@ -1,5 +1,5 @@
 
-/* 
+
 // User Input
 let name = prompt("A name:");
 let adjective = prompt("An adjective:");
@@ -23,16 +23,10 @@ function makeGreeting(){
     console.log("Hello everyone, my name is " + name );
 }
 
-makeGreeting()  
-*/
+ 
 
 
 
-/*========================================================= */
-/*
-let name = prompt("A name:");
-let adjective = prompt("An adjective:");
-let noun = prompt("A noun:");
 
 
 let closings = [
@@ -48,14 +42,14 @@ function randomNumber(a, b) {
 function makeCard() {
   console.log("Dear " + name + ",");
   console.log("You are as " + adjective + " as a " + noun + ".");
-  let index = randomNumber(0, closings.length - 1);
+  let index = randomNumber(0,2);
   console.log(closings[index]);
 }
 
-makeCard();
 
 
-============================================== */
+
+
 
 let style = prompt("Fancy or Silly ?");
 let name = prompt("A name:");
