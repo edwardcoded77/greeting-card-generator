@@ -1,5 +1,4 @@
 let makeButton = document.getElementById("make-button");
-
 let nameInput  = document.getElementById("name-input");
 let adjectiveInput = document.getElementById("adjective-input");
 let nounInput = document.getElementById("noun-input");
