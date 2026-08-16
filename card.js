@@ -15,25 +15,22 @@ let closings = [
   "Prepare yourself for the battle ahead.",
   "Failure is not an option.",
   "You are on the winning side.",
-  "Let the drums roll!"
+  "Good luck!"
 ];
-
-
-
 
 
 function randomNumber(a, b){
   return Math.floor(Math.random() * (b-a+1) + a );
 }
 
+
 function makeCard(){
-// alert("click");
-cardSection.hidden = false;
 let name = nameInput.value;
 let adjective = adjectiveInput.value;
 let noun = nounInput.value;
-cardText.textContent = "Dear " + name + " , you are as " + adjective + " as a " + noun + ". Happy birthday from the pluto. "
+cardText.textContent = "Dear " + name + ", you're as " + adjective + " as a " + noun + "! Have amazing birthday from Pluto!";
 closeSpace.textContent = closings[randomNumber(0 , 4)];
+cardSection.hidden = false;
 
 }
 
@@ -42,16 +39,16 @@ function resetBtnfunctn(){
   nameInput.value ="";
   adjectiveInput.value="";
   nounInput.value="";
-  cardSection.hidden = false;
+  cardSection.hidden = true;
 }
 
 
 
-function surpriseMe(){
-    let index = randomNumber(0, closings.length - 1);
-    closeSpace.textContent = closings[index];
+function showRandomClosing() {
+    let randomIndex = randomNumber(0, closings.length - 1);
+    closeSpace.textContent = closings[randomIndex];
 }
 
-surpriseInput.addEventListener("click", surpriseMe)
+surpriseInput.addEventListener("click", showRandomClosing)
 makeButton.addEventListener("click", makeCard);
 resetBtn.addEventListener("click", resetBtnfunctn);
