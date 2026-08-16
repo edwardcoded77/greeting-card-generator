@@ -6,7 +6,7 @@ let cardText = document.getElementById("card-text");
 let closeSpace = document.getElementById("closing-text")
 let surpriseInput =  document.getElementById("surprise-button");
 let cardSection = document.getElementById("card-section");
-
+let resetBtn = document.getElementById("reset-button");
 
 
 
@@ -38,11 +38,20 @@ closeSpace.textContent = closings[randomNumber(0 , 4)];
 }
 
 
+function resetBtnfunctn(){
+  nameInput.value ="";
+  adjectiveInput.value="";
+  nounInput.value="";
+  cardSection.hidden = false;
+}
+
+
+
 function surpriseMe(){
     let index = randomNumber(0, closings.length - 1);
     closeSpace.textContent = closings[index];
 }
 
 surpriseInput.addEventListener("click", surpriseMe)
-
 makeButton.addEventListener("click", makeCard);
+resetBtn.addEventListener("click", resetBtnfunctn);
