@@ -35,6 +35,7 @@ cardSection.hidden = false;
 }
 
 
+
 function resetBtnfunctn(){
   nameInput.value ="";
   adjectiveInput.value="";
