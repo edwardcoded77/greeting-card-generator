@@ -7,8 +7,10 @@ let closeSpace = document.getElementById("closing-text")
 let surpriseInput =  document.getElementById("surprise-button");
 let cardSection = document.getElementById("card-section");
 let resetBtn = document.getElementById("reset-button");
+let bonusCount = document.getElementById("bonus-line");
 
 
+let cardsMade = 0;
 
 let closings = [
   "The race to victory starts now.",
@@ -18,11 +20,9 @@ let closings = [
   "Good luck!"
 ];
 
-
 function randomNumber(a, b){
   return Math.floor(Math.random() * (b-a+1) + a );
 }
-
 
 function makeCard(){
 let name = nameInput.value;
@@ -32,9 +32,13 @@ cardText.textContent = "Dear " + name + ", you're as " + adjective + " as a " + 
 closeSpace.textContent = closings[randomNumber(0 , 4)];
 cardSection.hidden = false;
 
+cardsMade = cardsMade + 1 ;
+console.log("Card Made:" , cardsMade);
+if (cardsMade >= 5 ){
+  bonusCount.hidden = false;
+  }
+
 }
-
-
 
 function resetBtnfunctn(){
   nameInput.value ="";
@@ -42,7 +46,6 @@ function resetBtnfunctn(){
   nounInput.value="";
   cardSection.hidden = true;
 }
-
 
 
 function showRandomClosing() {
