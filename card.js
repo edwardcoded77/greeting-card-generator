@@ -34,6 +34,7 @@ cardSection.hidden = false;
 
 cardsMade = cardsMade + 1 ;
 
+
 if (cardsMade >= 5 ){
   bonusCount.hidden = false;
   }
