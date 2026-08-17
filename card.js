@@ -33,7 +33,7 @@ closeSpace.textContent = closings[randomNumber(0 , 4)];
 cardSection.hidden = false;
 
 cardsMade = cardsMade + 1 ;
-console.log("Card Made:" , cardsMade);
+
 if (cardsMade >= 5 ){
   bonusCount.hidden = false;
   }
