@@ -4,5 +4,5 @@ An interactive web application that turns user input into a personalized greetin
 
 ## How it's built
 
-- `index.html` + `card.js` — define the user interface and card-generation logic
-- `scripts/` — contains supporting scripts for the project
+- `index.html` and  `card.js` — Define the user interface and card-generation logic.
+- `scripts/`                  — Contains supporting scripts for the project.
