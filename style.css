@@ -1,4 +1,8 @@
-
+body {
+  /* text-align: center; */
+  font-family: system-ui, sans-serif;
+  /* background: #fffaf2; */
+}
 
 #make-button{
     width: 180px;
