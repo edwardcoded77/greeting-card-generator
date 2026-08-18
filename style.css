@@ -1,12 +1,9 @@
-/body {
-  font-family: system-ui, sans-serif;
- }
-
 .word-input{
    max-width: 40rem;
    background:rgb(212, 211, 208);
    color: #2c2340;
    border-radius: 8px;
+   
    
 } 
 
@@ -14,6 +11,8 @@
     display: grid;
     grid-template-columns: 120px 1fr;
     align-items: center;
+    font-size: 1.0rem;
+    
     
    
 }
