@@ -1,19 +1,43 @@
-body {
-  /* text-align: center; */
+/body {
   font-family: system-ui, sans-serif;
-  /* background: #fffaf2; */
+ }
+
+.word-input{
+   max-width: 40rem;
+   background:rgb(212, 211, 208);
+   color: #2c2340;
+   border-radius: 8px;
+   
+} 
+
+#order-section label {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    
+   
 }
 
+
 #make-button{
-    width: 180px;
     margin: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
-#make-button{
-  width: 180px;  
+#reset-button{
+    margin: 5px;
+    border-radius: 8px; 
+    width: 150px;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 #surprise-button{
-     width: 180px;
-    margin: 20px;
+     /* width: 180px; */
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
 }
